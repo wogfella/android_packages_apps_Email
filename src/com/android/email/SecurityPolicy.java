@@ -373,7 +373,7 @@ public class SecurityPolicy {
                 }
             }
             if (policy.mRequireEncryption) {
-                int encryptionStatus = getDPM().getStorageEncryptionStatus();
+                int encryptionStatus = DevicePolicyManager.ENCRYPTION_STATUS_ACTIVE;
                 if (encryptionStatus != DevicePolicyManager.ENCRYPTION_STATUS_ACTIVE) {
                     reasons |= INACTIVE_NEED_ENCRYPTION;
                 }
